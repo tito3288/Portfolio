@@ -1,17 +1,28 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import TypewriterComponent from "typewriter-effect";
 
 const AboutMe = () => {
   return (
     <div
       style={{
-        backgroundColor: "#100F0F",
+        backgroundColor: "#04293A",
         height: "500px",
         width: "100%",
         position: "absolute",
-        marginTop: "400px",
+        marginTop: "100px",
       }}
     >
+      <hr
+        style={{
+          border: "solid none none ",
+          borderColor: "white",
+          width: "20%",
+          margin: "auto auto",
+          borderWidth: "1px",
+          display: "block",
+        }}
+      />
       <Row
         style={{
           width: "100%",
@@ -30,9 +41,23 @@ const AboutMe = () => {
             alt="My Face"
           />
         </Col>
-        <Col>
-          <h1>Who is this guy..</h1>
-          <p>My name is Bryan Arambula</p>
+        <Col style={{ color: "#64ffda" }}>
+          <h1 style={{ fontSize: "70px", fontWeight: "bold" }}>Hobbies:</h1>
+          <div style={{ fontSize: "30px", fontWeight: "bold" }}>
+            <TypewriterComponent
+              options={{
+                strings: [
+                  "Web Development",
+                  "Mountain Biking",
+                  "Sports",
+                  "Designing",
+                  "Playing Video Games",
+                ],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </div>
         </Col>
       </Row>
     </div>

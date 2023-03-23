@@ -2,12 +2,14 @@ import React from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";
+import { Col, Row } from "react-bootstrap";
+import TypewriterComponent from "typewriter-effect";
 
 const ParticlesComp = () => {
   const options = {
     background: {
       color: {
-        value: "#282c34",
+        value: "#04293A",
       },
     },
     fullScreen: false,
@@ -21,7 +23,7 @@ const ParticlesComp = () => {
       },
       //THESE ARE THE COLORS OF THE DOTS THEMSELVES
       color: {
-        value: ["#EDEDED", "#7F8487", "#316B83", "#181818"],
+        value: ["#EDEDED", "#7F8487", "#64ffda", "#181818"],
       },
       shape: {
         type: "circle",
@@ -80,13 +82,13 @@ const ParticlesComp = () => {
   });
 
   return (
-    <div>
+    <div style={{ backgroundColor: "#04293A" }}>
       <Particles
         className="particles-canvas"
         options={options}
         init={particlesInit}
       />
-      <div style={{ textAlign: "center", marginTop: "15%" }}>
+      <div style={{ textAlign: "center", marginTop: "10%" }}>
         <h1
           style={{
             color: "#EDEDED",
@@ -99,7 +101,80 @@ const ParticlesComp = () => {
         <h2 style={{ color: "#EDEDED", opacity: "0.5", fontSize: "50px" }}>
           I build things for the web, because why not?
         </h2>
+        <button
+          className="my-5"
+          style={{
+            opacity: "0.9",
+            backgroundColor: "transparent",
+            border: "solid #64ffda",
+            color: "#64ffda",
+            padding: "10px 10px",
+            fontWeight: "bold",
+            borderRadius: "20px",
+          }}
+        >
+          Check Me Out
+        </button>
       </div>
+
+      {/* <div
+        style={{
+          backgroundColor: "#04293A",
+          height: "500px",
+          width: "100%",
+
+          position: "absolute",
+          // marginTop: "200px",
+        }}
+      >
+        <hr
+          style={{
+            border: "solid none none ",
+            borderColor: "white",
+            width: "10%",
+            margin: "auto auto",
+            opacity: "0.7",
+            borderWidth: "1px",
+            display: "block",
+          }}
+        />
+        <Row
+          style={{
+            width: "100%",
+            textAlign: "center",
+            marginTop: "10%",
+          }}
+          lg={2}
+          md={2}
+          sm={2}
+          xs={2}
+        >
+          <Col>
+            <img
+              style={{ width: "250px" }}
+              src="https://i.etsystatic.com/18079337/r/il/31440e/2827976051/il_570xN.2827976051_ithl.jpg"
+              alt="My Face"
+            />
+          </Col>
+          <Col style={{ color: "#64ffda" }}>
+            <h1 style={{ fontSize: "70px", fontWeight: "bold" }}>Hobbies:</h1>
+            <div style={{ fontSize: "30px", fontWeight: "bold" }}>
+              <TypewriterComponent
+                options={{
+                  strings: [
+                    "Web Development",
+                    "Mountain Biking",
+                    "Sports",
+                    "Designing",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </div>
+          </Col>
+        </Row>
+      </div> */}
     </div>
   );
 };
