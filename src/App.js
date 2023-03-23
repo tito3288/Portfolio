@@ -8,9 +8,22 @@ import Technologies from "./components/Technologies.js";
 function App() {
   return (
     <div>
-      <ParticlesComp />
-      <AboutMe />
-      <Technologies />
+      <div
+        style={{
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+        }}
+      >
+        <ParticlesComp />
+      </div>
+      <div style={{ paddingTop: "" }}>
+        <AboutMe />
+      </div>
+      <div style={{ paddingTop: "" }}>
+        <Technologies />
+      </div>
     </div>
   );
 }

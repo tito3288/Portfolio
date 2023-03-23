@@ -2,8 +2,6 @@ import React from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";
-import { Col, Row } from "react-bootstrap";
-import TypewriterComponent from "typewriter-effect";
 
 const ParticlesComp = () => {
   const options = {
