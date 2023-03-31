@@ -1,8 +1,8 @@
 import React, { useCallback } from "react";
 import Particles from "react-particles";
-import { Container } from "react-bootstrap";
 import { loadFull } from "tsparticles";
 import { motion } from "framer-motion";
+import NavbarComp from "./NavbarComp";
 import "../Portfolio.css";
 
 const ParticlesComp = () => {
@@ -88,6 +88,7 @@ const ParticlesComp = () => {
         options={options}
         init={particlesInit}
       />
+
       <div className="particles-content">
         <h1>Bryan Arambula</h1>
         <motion.span

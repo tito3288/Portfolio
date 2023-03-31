@@ -26,6 +26,43 @@ hr {
   }
 }
 
+.navbar {
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  opacity: 1;
+  z-index: 20;
+  /* border: solid 1px #100f0f; */
+  position: fixed;
+  margin: auto auto;
+  width: 70%;
+}
+
+.navbar-icon {
+  font-size: 30px;
+  margin: auto auto;
+  background-color: #121212;
+  padding: 10px 10px;
+  border-radius: 10px;
+  font-family: "Plaster", cursive;
+}
+
+.navbar-links {
+  color: white;
+  font-family: "Plaster", cursive;
+}
+
+.cursor {
+  color: #d2001a;
+  font-weight: bold;
+  animation: blink 1.3s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
 .particles-canvas {
   /* pointer-events: none; */
   height: 100% !important;
@@ -48,11 +85,12 @@ hr {
   color: white;
   /* opacity: 0.9; */
   font-size: 80px;
+  font-weight: bold;
   display: inline-block;
 }
 
 .particles-content span {
-  opacity: 0.9;
+  opacity: 1;
   color: #d2001a;
   font-size: 180px;
   display: inline-block;
@@ -60,12 +98,12 @@ hr {
 
 .particles-content h2 {
   color: gray;
-  opacity: 0.9;
+  opacity: 1;
   font-size: 50px;
 }
 
 .particles-content button {
-  opacity: 0.9;
+  opacity: 1;
   background-color: transparent;
   border: solid gray;
   color: white;
@@ -128,6 +166,7 @@ hr {
 
 .aboutme-title {
   font-size: 75px;
+  font-weight: bold;
 }
 
 .aboutme-hobbies-title {
@@ -223,7 +262,7 @@ hr {
   padding-bottom: 20px;
   font-size: 80px;
   font-weight: bold;
-  color: #100f0f;
+  color: white;
   display: inline-block;
 }
 
@@ -286,6 +325,42 @@ hr {
     }
     to {
       transform: translateX(0);
+    }
+  }
+
+  .navbar {
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    opacity: 1;
+    z-index: 20;
+    /* border: solid 1px #100f0f; */
+    position: fixed;
+    margin: auto auto;
+    width: 90%;
+  }
+
+  .navbar-icon {
+    font-size: 30px;
+    margin: auto auto;
+    background-color: #121212;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-family: "Plaster", cursive;
+  }
+
+  .navbar-links {
+    color: white;
+  }
+
+  .cursor {
+    color: #d2001a;
+    font-weight: bold;
+    animation: blink 1.3s infinite;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
     }
   }
 

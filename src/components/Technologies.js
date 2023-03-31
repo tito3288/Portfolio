@@ -5,7 +5,7 @@ import { Row, Col, Container } from "react-bootstrap";
 const Technologies = () => {
   const [cloudOptions, setCloudOptions] = React.useState({
     radius: 300,
-    maxSpeed: "fast",
+    maxSpeed: "slow",
   });
 
   React.useEffect(() => {

@@ -22,6 +22,20 @@ const Contact = () => {
           className="contact-textarea"
           placeholder="Enter Message"
         ></textarea>
+        <button
+          className="my-4"
+          type="submit"
+          style={{
+            marginLeft: "70%",
+            backgroundColor: "transparent",
+            border: "solid #d2001a",
+            color: "gray",
+            padding: "7px 20px",
+            fontWeight: "bold",
+          }}
+        >
+          Submit
+        </button>
       </form>
     </div>
   );

@@ -1,49 +1,37 @@
 import React from "react";
 import { Nav, Navbar, Container, NavDropdown } from "react-bootstrap";
+import { useInView } from "react-intersection-observer";
 
 const NavbarComp = () => {
   return (
-    <div>
+    <div style={{ paddingTop: "30px" }}>
       <Container>
-        <Navbar
-          expand="lg"
-          style={{
-            backgroundColor: "#100f0f",
-            border: "solid #ff0303",
-            padding: "10px",
-            boxShadow: "8px 6px 0px #E21818",
-            opacity: "0.8",
-          }}
-        >
+        <Navbar expand="lg" className="navbar">
           <Container>
             <Navbar.Brand style={{ color: "white" }} href="#home">
-              B.A
+              <p className="navbar-icon">
+                B<span style={{ color: "red" }}>.</span>A
+                <span className="cursor">|</span>
+              </p>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link style={{ color: "white" }} href="#home">
+                <Nav.Link className="navbar-links" href="#home">
                   Home
                 </Nav.Link>
-                <Nav.Link style={{ color: "white" }} href="#link">
-                  Link
+                <Nav.Link className="navbar-links" href="#link">
+                  About
                 </Nav.Link>
-                <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                  <NavDropdown.Item
-                    style={{ color: "white" }}
-                    href="#action/3.2"
-                  >
-                    Another action
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">
-                    Something
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4">
-                    Separated link
-                  </NavDropdown.Item>
-                </NavDropdown>
+                <Nav.Link className="navbar-links" href="#link">
+                  Skills
+                </Nav.Link>
+                <Nav.Link className="navbar-links" href="#link">
+                  Work
+                </Nav.Link>
+                <Nav.Link className="navbar-links" href="#link">
+                  Contact
+                </Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
