@@ -4,26 +4,19 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import ParticlesComp from "./components/ParticlesComp";
 import AboutMe from "./components/About-Me";
 import Technologies from "./components/Technologies.js";
+import ProjectsComp from "./components/ProjectsComp";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
-      <div
-        style={{
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-        }}
-      >
-        <ParticlesComp />
-      </div>
-      <div style={{ paddingTop: "" }}>
-        <AboutMe />
-      </div>
-      <div style={{ paddingTop: "" }}>
-        <Technologies />
-      </div>
+    <div style={{ backgroundColor: "#100F0F" }}>
+      <ParticlesComp />
+      <AboutMe />
+      <Technologies />
+      <ProjectsComp />
+      <Contact />
+      <Footer />
     </div>
   );
 }

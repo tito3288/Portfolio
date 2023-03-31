@@ -1,57 +1,37 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Col, Row, Container } from "react-bootstrap";
 import TypewriterComponent from "typewriter-effect";
+import "../Portfolio.css";
 
 const AboutMe = () => {
   return (
-    <div
-      style={{
-        backgroundColor: "#04293A",
-        height: "500px",
-        width: "100%",
-        position: "absolute",
-        marginTop: "100px",
-      }}
-    >
-      <hr
-        style={{
-          border: "solid none none ",
-          borderColor: "white",
-          width: "20%",
-          margin: "auto auto",
-          borderWidth: "1px",
-          display: "block",
-        }}
-      />
-      <Row
-        style={{
-          width: "100%",
-          textAlign: "center",
-          marginTop: "10%",
-        }}
-        lg={2}
-        md={2}
-        sm={2}
-        xs={2}
-      >
-        <Col>
-          <img
-            style={{ width: "250px" }}
-            src="https://i.etsystatic.com/18079337/r/il/31440e/2827976051/il_570xN.2827976051_ithl.jpg"
-            alt="My Face"
-          />
+    <div className="aboutme-background">
+      <div className="aboutme-background2"></div>
+      <hr />
+      <Row className="aboutme-row" lg={2} md={2} sm={1} xs={1}>
+        <Col className="aboutme-col">
+          <h1 className="aboutme-title">
+            Front-End <br />
+            Software Developer
+          </h1>
         </Col>
-        <Col style={{ color: "#64ffda" }}>
-          <h1 style={{ fontSize: "70px", fontWeight: "bold" }}>Hobbies:</h1>
-          <div style={{ fontSize: "30px", fontWeight: "bold" }}>
+        <Col className="aboutme-col2">
+          <h1 className="aboutme-hobbies-title">Who am I?</h1>
+          <h5>
+            I am a self tought software developer located in South Bend, IN. I
+            have a passion about designing UI effects, animations, and crafting
+            user experiences that are dynamic, intuitive, and engaging.
+          </h5>
+          <div className="aboutme-typewritter">
+            <h4>Interests:</h4>
             <TypewriterComponent
               options={{
                 strings: [
-                  "Web Development",
+                  "Web & App Development",
                   "Mountain Biking",
                   "Sports",
                   "Designing",
-                  "Playing Video Games",
+                  "Video Games",
                 ],
                 autoStart: true,
                 loop: true,
