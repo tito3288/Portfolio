@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import React from "react";
+import React, { useRef } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ParticlesComp from "./components/ParticlesComp";
@@ -9,6 +9,7 @@ import ProjectsComp from "./components/ProjectsComp";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import NavbarComp from "./components/NavbarComp";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 function App() {
   const [isNavbarVisible, setIsNavbarVisible] = React.useState(false);
@@ -25,15 +26,36 @@ function App() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const ref = useRef();
+
+  function handleParticlesClick() {
+    ref.current.scrollTo(1);
+  }
+
   return (
     <div style={{ backgroundColor: "#100F0F" }}>
-      {isNavbarVisible && <NavbarComp />}
-      <ParticlesComp />
-      <AboutMe />
-      <Technologies />
-      <ProjectsComp />
-      <Contact />
-      <Footer />
+      <NavbarComp />
+      <Parallax pages={5} ref={ref}>
+        <ParallaxLayer>
+          <ParticlesComp handleParticlesClick={handleParticlesClick} />
+        </ParallaxLayer>
+        <ParallaxLayer offset={1} speed={0.5}>
+          <AboutMe />
+        </ParallaxLayer>
+        <ParallaxLayer offset={2} speed={0.2}>
+          <Technologies />
+        </ParallaxLayer>
+        <ParallaxLayer offset={3} speed={0}>
+          <ProjectsComp />
+        </ParallaxLayer>
+        <ParallaxLayer offset={4} speed={2}>
+          <Contact />
+        </ParallaxLayer>
+        {/* <ParallaxLayer offset={5}>
+          <Footer />
+        </ParallaxLayer> */}
+      </Parallax>
     </div>
   );
 }

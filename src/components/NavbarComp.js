@@ -1,6 +1,5 @@
 import React from "react";
-import { Nav, Navbar, Container, NavDropdown } from "react-bootstrap";
-import { useInView } from "react-intersection-observer";
+import { Nav, Navbar, Container } from "react-bootstrap";
 
 const NavbarComp = () => {
   return (

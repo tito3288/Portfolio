@@ -12,6 +12,7 @@ const Footer = () => {
       style={{
         backgroundColor: "#100F0F",
         width: "100%",
+        //change
         height: "200px",
         textAlign: "center",
       }}

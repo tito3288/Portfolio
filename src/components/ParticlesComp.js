@@ -2,10 +2,9 @@ import React, { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { motion } from "framer-motion";
-import NavbarComp from "./NavbarComp";
 import "../Portfolio.css";
 
-const ParticlesComp = () => {
+const ParticlesComp = (props) => {
   const options = {
     background: {
       color: {
@@ -103,7 +102,9 @@ const ParticlesComp = () => {
           .
         </motion.span>
         <h2>I build things for the web, because why not?</h2>
-        <button className="my-5">Check Me Out</button>
+        <button onClick={props.handleParticlesClick} className="my-5">
+          Check Me Out
+        </button>
       </div>
     </div>
   );
