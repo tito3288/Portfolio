@@ -20,7 +20,10 @@ const AboutMe = () => {
           <h5>
             I am a self tought software developer located in South Bend, IN. I
             have a passion about designing UI effects, animations, and crafting
-            user experiences that are dynamic, intuitive, and engaging.
+            user experiences that are dynamic, intuitive, and engaging. Aside
+            from programming, I like outdoor activities and anything else
+            related to tech. Quick learner and strive to know as much as I can
+            on anyhting I feel passionate about.
           </h5>
           <div className="aboutme-typewritter">
             <h4>Interests:</h4>
@@ -28,9 +31,10 @@ const AboutMe = () => {
               options={{
                 strings: [
                   "Web & App Development",
+                  "UI Designing",
                   "Mountain Biking",
-                  "Sports",
-                  "Designing",
+                  "Mechanics",
+                  "Volleyball",
                   "Video Games",
                 ],
                 autoStart: true,

@@ -2,6 +2,8 @@ import React, { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { motion } from "framer-motion";
+import { Container } from "react-bootstrap";
+import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
 import "../Portfolio.css";
 
 const ParticlesComp = (props) => {
@@ -70,7 +72,7 @@ const ParticlesComp = (props) => {
           },
         },
         push: {
-          quantity: 4,
+          quantity: 1,
         },
       },
     },
@@ -87,25 +89,30 @@ const ParticlesComp = (props) => {
         options={options}
         init={particlesInit}
       />
-
-      <div className="particles-content">
-        <h1>Bryan Arambula</h1>
-        <motion.span
-          initial={{ x: 100 }}
-          animate={{ x: 0 }}
-          transition={{
-            type: "spring",
-            damping: 7,
-            stiffness: 30,
-          }}
-        >
-          .
-        </motion.span>
-        <h2>I build things for the web, because why not?</h2>
-        <button onClick={props.handleParticlesClick} className="my-5">
-          Check Me Out
-        </button>
-      </div>
+      <Container>
+        <div className="particles-content">
+          <h1>Bryan Arambula</h1>
+          <motion.span
+            initial={{ x: 100 }}
+            animate={{ x: 0 }}
+            transition={{
+              type: "spring",
+              damping: 7,
+              stiffness: 30,
+            }}
+          >
+            .
+          </motion.span>
+          <h2>Styling & Building things for the web.</h2>
+          <button onClick={props.handleParticlesClick} className="my-5">
+            Check Me Out <br />
+            <KeyboardDoubleArrowDownIcon
+              className="arrow"
+              style={{ fontSize: "50px" }}
+            />
+          </button>
+        </div>
+      </Container>
     </div>
   );
 };

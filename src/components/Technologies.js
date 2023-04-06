@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { TagCloud } from "@frank-mayer/react-tag-cloud";
 import { Row, Col, Container } from "react-bootstrap";
 
@@ -47,9 +47,10 @@ const Technologies = () => {
         <Row lg={2} md={2} sm={1} xs={1}>
           <Col className="skills-col">
             <h4 className="skillsCol-content">
-              Learning as much as I can on anything I am passionate about, Web
-              Development is no excpetion. I believe simplicity but also a touch
-              of ingenuty is key for great user experience.
+              My area of expertise is in Front-End Web Development, with
+              additional experience in IOS App Development. For Medium and Large
+              scale web applications, my preferred technologies include HTML,
+              CSS, and React.js. I also use Node.js for API implementations.
             </h4>
           </Col>
           <Col>

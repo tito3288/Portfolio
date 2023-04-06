@@ -35,7 +35,23 @@ function App() {
 
   return (
     <div style={{ backgroundColor: "#100F0F" }}>
-      <NavbarComp />
+      <NavbarComp
+        handleHome={() => {
+          ref.current.scrollTo(0);
+        }}
+        handleAbout={() => {
+          ref.current.scrollTo(1);
+        }}
+        handleSkills={() => {
+          ref.current.scrollTo(2);
+        }}
+        handleWork={() => {
+          ref.current.scrollTo(3);
+        }}
+        handleContact={() => {
+          ref.current.scrollTo(4);
+        }}
+      />
       <Parallax pages={5} ref={ref}>
         <ParallaxLayer>
           <ParticlesComp handleParticlesClick={handleParticlesClick} />
@@ -49,12 +65,9 @@ function App() {
         <ParallaxLayer offset={3} speed={0}>
           <ProjectsComp />
         </ParallaxLayer>
-        <ParallaxLayer offset={4} speed={2}>
+        <ParallaxLayer offset={4} speed={3.2}>
           <Contact />
         </ParallaxLayer>
-        {/* <ParallaxLayer offset={5}>
-          <Footer />
-        </ParallaxLayer> */}
       </Parallax>
     </div>
   );

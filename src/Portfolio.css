@@ -32,10 +32,9 @@ hr {
 
 .navbar {
   border-radius: 20px;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
   opacity: 1;
   z-index: 20;
-  /* border: solid 1px #100f0f; */
   position: fixed;
   margin: auto auto;
   width: 70%;
@@ -52,7 +51,9 @@ hr {
 
 .navbar-links {
   color: white;
-  font-family: "Plaster", cursive;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
 }
 
 .cursor {
@@ -80,7 +81,7 @@ hr {
 
 .particles-content {
   text-align: center;
-  margin: 5% auto;
+  margin: 10% auto;
   position: relative;
   z-index: 1;
 }
@@ -88,7 +89,9 @@ hr {
 .particles-content h1 {
   color: white;
   /* opacity: 0.9; */
-  font-size: 80px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 100px;
+  text-shadow: 8px 8px black;
   font-weight: bold;
   display: inline-block;
 }
@@ -102,6 +105,8 @@ hr {
 
 .particles-content h2 {
   color: gray;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bold;
   opacity: 1;
   font-size: 50px;
 }
@@ -109,10 +114,35 @@ hr {
 .particles-content button {
   opacity: 1;
   background-color: transparent;
-  border: solid gray;
+  border: none;
   color: white;
   padding: 10px 10px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
   font-weight: bold;
+}
+
+.arrow {
+  animation: vibration 2s infinite;
+  color: #d2001a;
+}
+
+@keyframes vibration {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* ABOUT ME SECTION */
@@ -166,29 +196,43 @@ hr {
 .aboutme-col2 {
   opacity: 0.9;
   color: gray;
+  font-family: "Bebas Neue", cursive;
+}
+
+.aboutme-col2 h5 {
+  font-size: 30px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bold;
 }
 
 .aboutme-title {
-  font-size: 75px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 90px;
+  text-shadow: 8px 8px black;
   font-weight: bold;
 }
 
 .aboutme-hobbies-title {
   text-align: center;
   font-size: 70px;
+  font-family: "Bebas Neue", cursive;
+
   color: white;
+}
+
+.aboutme-typewritter h4 {
+  font-size: 45px;
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  font-weight: bold;
+  margin-top: 40px;
 }
 
 .aboutme-typewritter {
   font-size: 30px;
+  font-family: "Rajdhani", sans-serif;
   color: #d2001a;
   font-weight: bold;
-}
-
-.aboutme-typewritter h4 {
-  font-size: 35px;
-  color: white;
-  margin-top: 40px;
 }
 
 /* SKILLS SECTION */
@@ -196,12 +240,16 @@ hr {
 .skills-title {
   margin-left: 20%;
   /* padding: 50px 10px; */
+  font-family: "Bebas Neue", cursive;
+  font-weight: bold;
   font-size: 160px;
 }
 
 .skills-col {
   margin: auto auto;
   text-align: center;
+  font-family: "Rajdhani", sans-serif;
+
   color: gray;
 }
 
@@ -220,7 +268,9 @@ hr {
 
 .projects-title {
   font-size: 290px;
-  margin-left: 40%;
+  margin-left: 50%;
+  font-weight: bold;
+  font-family: "Bebas Neue", cursive;
   position: absolute;
   z-index: -1;
 }
@@ -228,7 +278,7 @@ hr {
 .projects-row {
   width: 100%;
   text-align: center;
-  margin-top: 240px;
+  margin-top: 200px;
   z-index: 11;
 }
 
@@ -237,14 +287,75 @@ hr {
   text-align: center;
 }
 
+.col2 {
+  padding-left: 170px;
+  padding-right: 170px;
+}
+
 .projects-img-gallery {
   width: 500px;
+}
+
+.modal-img {
+  width: 80%;
+}
+
+.project-container {
+  position: relative;
+}
+
+.project-container:hover .projects-img-gallery {
+  transition: 0.5s ease;
+  opacity: 1;
+}
+
+.project-container:hover .middle {
+  transition: 0.5s ease;
+  opacity: 1;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+  /* padding: 105px; */
+  width: 300px;
+  height: 300px;
+  backdrop-filter: blur(10px) invert(80%);
+  font-family: "Rajdhani", sans-serif;
+}
+
+.middle h1 {
+  margin: 30% auto;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.modal-content {
+  text-align: center;
+}
+
+.modal-content h5 {
+  color: #d2001a;
+}
+
+.modal-content p {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 /* CONTACT SECTION  */
 
 .contact-background {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-color: #171717;
   position: relative;
@@ -259,13 +370,26 @@ hr {
   text-align: center;
   margin: auto auto;
   padding-bottom: 100px;
+  display: inline-block;
+}
+
+.contact-form p {
+  color: gray;
+}
+
+.thankyou-page {
+  margin: 30% auto;
+  font-size: 90px;
+  font-family: "Bebas Neue", cursive;
+  color: white;
 }
 
 .contact-title {
   text-align: center;
   padding-bottom: 20px;
-  font-size: 80px;
+  font-size: 85px;
   font-weight: bold;
+  font-family: "Bebas Neue", cursive;
   color: white;
   display: inline-block;
 }
@@ -298,6 +422,19 @@ hr {
   border: none;
   color: white;
   outline: none;
+}
+
+.footer-title {
+  font-size: 20px;
+  color: gray;
+  margin-top: 40px;
+}
+
+.footer {
+  padding-top: 30px;
+  background-color: #100f0f;
+  height: 600px;
+  width: 100%;
 }
 
 /* MOBILE LAYOUT */
@@ -354,6 +491,15 @@ hr {
 
   .navbar-links {
     color: white;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .nav-toggle .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(210,0,26)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    border: none;
+    opacity: 0.7;
   }
 
   .cursor {
@@ -389,7 +535,9 @@ hr {
   .particles-content h1 {
     color: white;
     opacity: 0.9;
-    font-size: 40px;
+    font-family: "Bebas Neue", cursive;
+    font-size: 50px;
+    text-shadow: 8px 8px black;
     display: inline-block;
   }
 
@@ -406,10 +554,15 @@ hr {
     font-size: 30px;
   }
 
+  .arrow {
+    animation: vibration 2s infinite;
+    color: #d2001a;
+  }
+
   .particles-content button {
     opacity: 0.9;
     background-color: transparent;
-    border: solid gray;
+    border: none;
     color: white;
     padding: 10px 10px;
     font-weight: bold;
@@ -466,14 +619,20 @@ hr {
   .aboutme-col2 {
     opacity: 0.9;
     margin-top: 300px;
-    padding: 30px 40px;
+    padding: 40px 40px;
     text-align: center;
     color: gray;
   }
 
+  .aboutme-col2 h5 {
+    font-size: 21px;
+    font-weight: normal;
+  }
+
   .aboutme-title {
-    font-size: 40px;
+    font-size: 45px;
     font-weight: bold;
+    text-shadow: 8px 8px black;
     margin-top: 30px;
     display: inline-block;
   }
@@ -487,31 +646,31 @@ hr {
 
   .aboutme-hobbies-title {
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     color: white;
+  }
+
+  .aboutme-typewritter h4 {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    margin-top: 40px;
   }
 
   .aboutme-typewritter {
     margin-top: 70px;
     text-align: left;
-    font-size: 20px;
+    font-size: 25px;
     color: #d2001a;
     font-weight: bold;
-  }
-
-  .aboutme-typewritter h4 {
-    font-size: 25px;
-    font-weight: bold;
-    color: white;
-    margin-top: 40px;
   }
 
   /* SKILLS SECTION */
 
   .skills-title {
     margin-left: 20%;
-    padding: 50px 10px;
-    font-size: 45px;
+    padding: 40px 10px;
+    font-size: 70px;
     font-weight: bold;
   }
 
@@ -523,7 +682,7 @@ hr {
   }
 
   .skillsCol-content {
-    font-size: 23px;
+    font-size: 22px;
   }
 
   .tagcloud {
@@ -555,8 +714,40 @@ hr {
     margin-left: 1px;
   }
 
+  .col2 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .projects-img-gallery {
     width: 300px;
+  }
+
+  .modal-img {
+    width: 90%;
+  }
+
+  .middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    /* padding: 105px; */
+    width: 200px;
+    height: 200px;
+    backdrop-filter: blur(10px);
+    font-family: "Rajdhani", sans-serif;
+  }
+  .middle h1 {
+    margin: 30% auto;
+    font-size: 40px;
+    font-weight: bold;
   }
 
   /* CONTACT SECTION  */
@@ -570,7 +761,7 @@ hr {
     background-image: url(../public/code-clipart2.PNG);
     background-repeat: no-repeat;
     background-position: right;
-    background-size: 350px;
+    background-size: 360px;
   }
 
   .contact-form {
@@ -579,12 +770,24 @@ hr {
     padding-bottom: 50px;
   }
 
+  .contact-form p {
+    color: gray;
+    font-size: 15px;
+  }
+
+  .thankyou-page {
+    margin: 80% auto;
+    font-size: 50px;
+    font-family: "Bebas Neue", cursive;
+    color: white;
+  }
+
   .contact-title {
     text-align: center;
     padding-bottom: 20px;
     font-size: 60px;
     font-weight: bold;
-    color: #100f0f;
+    color: white;
     display: inline-block;
   }
 
@@ -616,5 +819,18 @@ hr {
     border: none;
     color: white;
     outline: none;
+  }
+
+  .footer-title {
+    font-size: 17px;
+    color: gray;
+    margin-top: 30px;
+  }
+
+  .footer {
+    padding-top: 50px;
+    background-color: #100f0f;
+    height: 100vh;
+    width: 100%;
   }
 }
