@@ -35,8 +35,8 @@ const ProjectsComp = () => {
         width: "100%",
         backgroundColor: "#100F0F",
         position: "relative",
-        marginTop: "60px",
-        paddingTop: "60px",
+        // marginTop: "60px",
+        // paddingTop: "60px",
         paddingBottom: "60px",
         zIndex: "0",
       }}
