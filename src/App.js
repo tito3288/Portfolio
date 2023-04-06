@@ -54,18 +54,22 @@ function App() {
       />
       <Parallax pages={5} ref={ref}>
         <ParallaxLayer>
-          <ParticlesComp handleParticlesClick={handleParticlesClick} />
+          <ParticlesComp
+            handleParticlesClick={handleParticlesClick}
+            speed={0.5}
+            factor={1}
+          />
         </ParallaxLayer>
-        <ParallaxLayer offset={1} speed={0.5}>
+        <ParallaxLayer offset={1} speed={0.8} factor={1}>
           <AboutMe />
         </ParallaxLayer>
-        <ParallaxLayer offset={2} speed={0.2}>
+        <ParallaxLayer offset={2} speed={0.7} factor={1}>
           <Technologies />
         </ParallaxLayer>
-        <ParallaxLayer offset={3} speed={0}>
+        <ParallaxLayer offset={3} speed={0.8} factor={1}>
           <ProjectsComp />
         </ParallaxLayer>
-        <ParallaxLayer offset={4} speed={3.2}>
+        <ParallaxLayer offset={4} speed={1} factor={1}>
           <Contact />
         </ParallaxLayer>
       </Parallax>
