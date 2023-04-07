@@ -31,7 +31,7 @@ const AboutMe = () => {
               options={{
                 strings: [
                   "Web & App Development",
-                  "UI Designing",
+                  "UI Design",
                   "Mountain Biking",
                   "Mechanics",
                   "Volleyball",

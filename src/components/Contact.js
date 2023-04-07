@@ -1,18 +1,30 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import { Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Container, Button } from "react-bootstrap";
 import { useForm, ValidationError } from "@formspree/react";
 
 const Contact = () => {
   const curentYear = new Date().getFullYear();
 
-  const [state, handleSubmit] = useForm("xlekpvge");
+  const control = useAnimation();
+
+  const [state, handleSubmit, reset] = useForm("xlekpvge");
   const [showThanksMessage, setShowThanksMessage] = React.useState(false);
+
+  const onSubmit = (data) => {
+    handleSubmit(data);
+    if (state.succeeded) {
+      reset();
+      setShowThanksMessage(true);
+      setTimeout(() => {
+        setShowThanksMessage(false);
+      }, 4000); // set the time for 5 seconds
+    }
+  };
 
   React.useEffect(() => {
     if (state.succeeded) {
@@ -40,8 +52,8 @@ const Contact = () => {
 
   return (
     <div className="contact-background">
-      <div style={{ width: "100%", height: "100vh" }} className="contact-form">
-        <form className="contact-form" onSubmit={handleSubmit}>
+      <div style={{ width: "100%", height: "100%" }} className="contact-form">
+        <form className="contact-form" onSubmit={onSubmit}>
           <h1 className="contact-title">Contact</h1>
 
           <motion.span
@@ -95,22 +107,20 @@ const Contact = () => {
             field="message"
             errors={state.errors}
           />
-          <button
-            className="my-4"
-            type="submit"
-            disabled={state.submitting}
-            style={{
-              marginLeft: "70%",
-              backgroundColor: "transparent",
-              border: "solid #d2001a",
-              color: "white",
-              padding: "7px 20px",
-              fontWeight: "bold",
-            }}
-          >
-            Submit
-          </button>
-
+          <motion.div animate={control} transition={{ duration: 0.5 }}>
+            <Button
+              className="my-4"
+              type="submit"
+              style={{
+                backgroundColor: "transparent",
+                border: "solid #d2001a",
+              }}
+              onClick={() => control.start({ scale: [1.5, 1] })}
+              disabled={state.submitting}
+            >
+              Submit
+            </Button>
+          </motion.div>
           <p style={{ marginBottom: "1px" }}>
             Email me for any questions <br /> or would like me to do a job for
             you!

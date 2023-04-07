@@ -369,12 +369,21 @@ hr {
 .contact-form {
   text-align: center;
   margin: auto auto;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   display: inline-block;
 }
 
 .contact-form p {
   color: gray;
+}
+
+.contact-form button {
+  margin-left: 70%;
+  background-color: transparent;
+  border: solid #d2001a;
+  color: white;
+  padding: 7px 15px;
+  font-weight: bold;
 }
 
 .thankyou-page {
@@ -433,8 +442,9 @@ hr {
 .footer {
   padding-top: 30px;
   background-color: #100f0f;
-  height: 600px;
+  height: 100%;
   width: 100%;
+  position: relative;
 }
 
 /* MOBILE LAYOUT */
@@ -771,6 +781,15 @@ hr {
   .contact-form p {
     color: gray;
     font-size: 15px;
+  }
+
+  .contact-form button {
+    margin-left: 5%;
+    background-color: transparent;
+    border: solid #d2001a;
+    color: white;
+    padding: 7px 15px;
+    font-weight: bold;
   }
 
   .thankyou-page {
