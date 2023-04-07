@@ -50,7 +50,8 @@ const Technologies = () => {
               My area of expertise is in Front-End Web Development, with
               additional experience in IOS App Development. For Medium and Large
               scale web applications, my preferred technologies include HTML,
-              CSS, and React.js. I also use Node.js for API implementations.
+              CSS, Javascript and React.js. I also use Node.js for API
+              implementations.
             </h4>
           </Col>
           <Col>
