@@ -123,7 +123,7 @@ const Contact = () => {
           </motion.div>
           <p style={{ marginBottom: "1px" }}>
             Email me for any questions <br /> or would like me to do a job for
-            you!
+            you! <br /> Se Habla Español.
           </p>
         </form>
 

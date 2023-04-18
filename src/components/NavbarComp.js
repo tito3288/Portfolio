@@ -30,7 +30,7 @@ const NavbarComp = (props) => {
   }
 
   return (
-    <div style={{ paddingTop: "30px" }}>
+    <div style={{ marginTop: "30px" }}>
       <Container>
         <Navbar expand="lg" expanded={expanded} className="navbar">
           <Container>

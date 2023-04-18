@@ -33,7 +33,7 @@ const projectsArrays = [
     modalPic: "teamup-modal.PNG",
     frameworks: "Swift, Core Data",
     description:
-      "IOS App makes the role of captaincy mush simpler. I Utilize Core Data framework to store sports and players for each sport/occasion.",
+      "IOS App makes the role of captaincy much simpler. I Utilize Core Data framework to store sports and players for each sport/occasion.",
     url: "https://apps.apple.com/us/app/team-up-teams/id1618447199",
   },
   {

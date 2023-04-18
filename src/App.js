@@ -7,7 +7,6 @@ import AboutMe from "./components/About-Me";
 import Technologies from "./components/Technologies.js";
 import ProjectsComp from "./components/ProjectsComp";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
 import NavbarComp from "./components/NavbarComp";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
@@ -34,7 +33,7 @@ function App() {
   }
 
   return (
-    <div style={{ backgroundColor: "#100F0F" }}>
+    <div>
       <NavbarComp
         handleHome={() => {
           ref.current.scrollTo(0);
