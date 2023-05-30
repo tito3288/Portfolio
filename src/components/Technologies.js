@@ -71,7 +71,8 @@ const Technologies = () => {
                 "Framer Motion",
                 "GIT",
                 "GITHUB",
-                "MongoDb",
+                "Spline",
+                "Figma",
               ]}
             </TagCloud>
           </Col>

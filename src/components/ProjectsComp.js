@@ -63,8 +63,8 @@ const ProjectsComp = () => {
           </Col>
         ))}
       </Row>
-      <Row className="projects-row2" lg={2} md={2} sm={1} xs={1}>
-        {projectsArrays.slice(3, 5).map((value, index) => (
+      <Row className="projects-row2" lg={3} md={3} sm={1} xs={1}>
+        {projectsArrays.slice(3, 6).map((value, index) => (
           <Col className="col2" key={value.id}>
             <div
               className="project-container"

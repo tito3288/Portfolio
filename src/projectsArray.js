@@ -45,6 +45,15 @@ const projectsArrays = [
       "Location and Time based IOS Reminders App. I Utilize Core Data framework to store all users reminders.",
     url: "https://apps.apple.com/us/app/remind-me-reminders/id1617564386",
   },
+  {
+    id: "6",
+    img: "6.PNG",
+    modalPic: "bryan-develops-modal.PNG",
+    frameworks: "Javascript, React.js, React-Bootstrap, Spline, Framer-Motion",
+    description:
+      "Web development freelance service. I Utilize Spline for 3D elements, framer motion for animations and built in React.js.",
+    url: "https://bryandevelops.com/",
+  },
 ];
 
 export default projectsArrays;
