@@ -68,7 +68,7 @@ function App() {
         <ParallaxLayer offset={3} speed={0.8} factor={1}>
           <ProjectsComp />
         </ParallaxLayer>
-        <ParallaxLayer offset={4} speed={2} factor={1}>
+        <ParallaxLayer offset={4} speed={3} factor={1}>
           <Contact />
         </ParallaxLayer>
       </Parallax>
