@@ -30,7 +30,7 @@ const NavbarComp = (props) => {
   }
 
   return (
-    <div style={{ marginTop: "30px" }}>
+    <div>
       <Container>
         <Navbar expand="lg" expanded={expanded} className="navbar">
           <Container>

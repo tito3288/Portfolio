@@ -33,7 +33,7 @@ const ProjectsComp = () => {
       style={{
         height: "100%",
         width: "100%",
-        backgroundColor: "#100F0F",
+        // backgroundColor: "#100F0F",
         position: "relative",
         // marginTop: "60px",
         // paddingTop: "60px",
@@ -64,7 +64,7 @@ const ProjectsComp = () => {
         ))}
       </Row>
       <Row className="projects-row2" lg={3} md={3} sm={1} xs={1}>
-        {projectsArrays.slice(3, 6).map((value, index) => (
+        {projectsArrays.slice(3, 7).map((value, index) => (
           <Col className="col2" key={value.id}>
             <div
               className="project-container"

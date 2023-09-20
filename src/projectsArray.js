@@ -54,6 +54,14 @@ const projectsArrays = [
       "Web development freelance service. I Utilize Spline for 3D elements, framer motion for animations and built in React.js.",
     url: "https://bryandevelops.com/",
   },
+  {
+    id: "7",
+    img: "qrme-logo.png",
+    modalPic: "#",
+    frameworks: "A lot of them",
+    description: "A lot of descriptions",
+    url: "https://www.google.com/",
+  },
 ];
 
 export default projectsArrays;

@@ -8,6 +8,7 @@ import Technologies from "./components/Technologies.js";
 import ProjectsComp from "./components/ProjectsComp";
 import Contact from "./components/Contact";
 import NavbarComp from "./components/NavbarComp";
+
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 function App() {
@@ -65,10 +66,10 @@ function App() {
         <ParallaxLayer offset={2} speed={0.7} factor={1}>
           <Technologies />
         </ParallaxLayer>
-        <ParallaxLayer offset={3} speed={0.8} factor={1}>
+        <ParallaxLayer offset={3} speed={2} factor={1}>
           <ProjectsComp />
         </ParallaxLayer>
-        <ParallaxLayer offset={4} speed={3} factor={1}>
+        <ParallaxLayer offset={4} factor={1}>
           <Contact />
         </ParallaxLayer>
       </Parallax>

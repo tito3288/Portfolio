@@ -37,7 +37,7 @@ const Technologies = () => {
       style={{
         height: "100%",
         width: "100%",
-        backgroundColor: "#100F0F",
+        // backgroundColor: "#100F0F",
         position: "relative",
       }}
     >

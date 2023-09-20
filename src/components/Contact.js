@@ -129,12 +129,7 @@ const Contact = () => {
 
         {/* BEGINNING OF FOTTER SECTION */}
 
-        <motion.div
-          className="footer"
-          initial={{ y: 50 }}
-          whileInView={{ y: 0 }}
-          transition={{ type: "spring", damping: 2 }}
-        >
+        <div className="footer">
           <a href="https://github.com/tito3288">
             <GitHubIcon
               className="mx-1 social-icon"
@@ -184,7 +179,7 @@ const Contact = () => {
             />
           </a>
           <h4 className="footer-title">Bryan Arambula ©️{curentYear}</h4>
-        </motion.div>
+        </div>
       </div>
     </div>
   );
