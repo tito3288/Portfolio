@@ -60,7 +60,7 @@ const projectsArrays = [
     modalPic: "#",
     frameworks: "A lot of them",
     description: "A lot of descriptions",
-    url: "https://www.google.com/",
+    url: "https://guarded-bastion-42461-efeb749a8d2b.herokuapp.com/",
   },
 ];
 
