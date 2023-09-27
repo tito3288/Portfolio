@@ -57,9 +57,11 @@ const projectsArrays = [
   {
     id: "7",
     img: "qrme-logo.png",
-    modalPic: "#",
-    frameworks: "A lot of them",
-    description: "A lot of descriptions",
+    modalPic: "qrme-modal.PNG",
+    frameworks:
+      "HTML/CSS, Javascript, React.js, Node.js, Express, Bootstrap, Framer-Motion",
+    description:
+      "QR code generator, easy to use and fun, type in any URL and convert it to a QR code. Free to downlad.",
     url: "https://guarded-bastion-42461-efeb749a8d2b.herokuapp.com/",
   },
 ];
